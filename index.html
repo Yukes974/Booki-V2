@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Booki</title>
+  </head>
+
+  <body>
+    <!-- Header comprennant le logo, la navigation etc... jusqu'à "i" -->
+    <header>
+      <div class="block_page">
+        <!-- Conteneur pour le logo et la navigation "Hébergements, activités et s'inscrire"-->
+        <div id="container_logo_nav" class="block_centered">
+          <!-- Logo Booki -->
+          <div id="logo">
+            <img src="images/logo/Booki@3x.png" alt="Logo de Booki" />
+          </div>
+          <!-- Navigation Hébergements, Activités et S'inscrire -->
+          <nav class="menu">
+            <div class="nav_heb">
+              <a href="#hebergements">
+                <span> Hébergements </span>
+              </a>
+            </div>
+            <div class="nav_act">
+              <a href="#activites">
+                <span> Activités </span>
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="block_centered">
+          <!-- Paragraphe -->
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
+          <!-- Barre de recherche -->
+          <div id="search">
+            <form method="post" action="transmettre_info.php">
+              <div id="form_container_position_icon">
+                <img
+                  src="images/icone/map-marker-alt.png"
+                  id="form_position_icon"
+                  alt="L'icône d'une position"
+                />
+              </div>
+              <input
+                id="search_input"
+                type="search"
+                name="search"
+                placeholder="Marseille, France"
+              />
+              <div id="form_submit">
+                <button type="button">
+                  <span>Rechercher</span>
+                  <img
+                    src="images/icone/search.png"
+                    alt="L'icône d'une loupe"
+                  />
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- Filtres -->
+          <div id="filter">
+            <span id="filter_title"> Filtres </span>
+            <div id="filter_box">
+              <div class="filter_elements">
+                <div class="filter_circle">
+                  <img
+                    src="images/icone/money-bill-wave.png"
+                    alt="Un billet monétaire"
+                  />
+                </div>
+                <span class="filter_label"> Économique </span>
+              </div>
+              <div class="filter_elements">
+                <div class="filter_circle">
+                  <img src="images/icone/child.png" alt="Un enfant" />
+                </div>
+                <span class="filter_label"> Familial </span>
+              </div>
+              <div class="filter_elements">
+                <div class="filter_circle">
+                  <img src="images/icone/heart.png" alt="Un coeur" />
+                </div>
+                <span class="filter_label"> Romantique </span>
+              </div>
+              <div class="filter_elements">
+                <div class="filter_circle">
+                  <img src="images/icone/dog.png" alt="Un chien" />
+                </div>
+                <span class="filter_label"> Animaux autorisés </span>
+              </div>
+            </div>
+          </div>
+          <!-- Information nbre logements dispo avec icône "i" -->
+          <div id="info">
+            <div id="info_container_circle">
+              <img src="images/icone/info.png" alt="Un point d'exclamation" />
+            </div>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Conteneur englobant les deux sections -->
+    <main>
+      <div class="block_page">
+        <!-- Conteneur englobant "Hébergements à Marseille" et "Les plus populaires" -->
+        <section id="heb_pop_container">
+          <!-- Conteneur "Hébergements à Marseille" -->
+          <div
+            id="heb_container"
+            class="heb_pop_footer_background_color main_border_radius"
+          >
+            <h2 id="hebergements">Hébergements à Marseille</h2>
+            <!-- Conteneur pour l'affichage des images cliquables -->
+            <div id="heb_container_img">
+              <!-- Bloc qui contient l'image, le texte et les étoiles -->
+              <div
+                class="heb_card heb_pop_card_background_color heb_pop_card_border main_border_radius"
+              >
+                <a href="#">
+                  <div>
+                    <img
+                      src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                      class="heb_img heb_pop_act_img_fit"
+                      alt="Une chambre d'apartement avec un lit superposé, un miroir, un ventilateur et deux fenêtres"
+                    />
+                    <div class="heb_container_content">
+                      <div>
+                        <h3>Auberge La Cannebière</h3>
+                        <p>Nuit à partir de <span>25€</span></p>
+                      </div>
+                      <div>
+                        <span class="heb_star star_space_between">
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_grey.png"
+                            class="star_size"
+                            alt="Une étoile grise"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="heb_card heb_pop_card_background_color heb_pop_card_border main_border_radius"
+              >
+                <a href="#">
+                  <div>
+                    <img
+                      src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                      class="heb_img heb_pop_act_img_fit"
+                      alt="Une chambre avec deux lits, deux tableaux et une fenêtre"
+                    />
+                    <div class="heb_container_content">
+                      <div>
+                        <h3>Hôtel du port</h3>
+                        <p>Nuit à partir de 52<span>€</span></p>
+                      </div>
+                      <div>
+                        <span class="heb_star star_space_between">
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="heb_card heb_pop_card_background_color heb_pop_card_border main_border_radius"
+              >
+                <a href="#">
+                  <div>
+                    <img
+                      src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                      class="heb_img heb_pop_act_img_fit"
+                      alt="Une chambre avec un lit, une armoire, un miroir, une table de nuit et une lampe"
+                    />
+                    <div class="heb_container_content">
+                      <div>
+                        <h3>Hôtel Les mouettes</h3>
+                        <p>Nuit à partir de 76<span>€</span></p>
+                      </div>
+                      <div>
+                        <span class="heb_star star_space_between">
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_grey.png"
+                            class="star_size"
+                            alt="Une étoile grise"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="heb_card heb_pop_card_background_color heb_pop_card_border main_border_radius"
+              >
+                <a href="#">
+                  <div>
+                    <img
+                      src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                      class="heb_img heb_pop_act_img_fit"
+                      alt="Un lit, deux oreillers, deux tables de nuit et un tableau"
+                    />
+                    <div class="heb_container_content">
+                      <div>
+                        <h3>Hôtel de la mer</h3>
+                        <p>Nuit à partir de 46<span>€</span></p>
+                      </div>
+                      <div>
+                        <span class="heb_star star_space_between">
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_grey.png"
+                            class="star_size"
+                            alt="Une étoile grise"
+                          />
+                          <img
+                            src="images/icone/star_grey.png"
+                            class="star_size"
+                            alt="Une étoile grise"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="heb_card heb_pop_card_background_color heb_pop_card_border main_border_radius"
+              >
+                <a href="#">
+                  <div>
+                    <img
+                      src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                      class="heb_img heb_pop_act_img_fit"
+                      alt="Une chambre avec deux lits superposés"
+                    />
+                    <div class="heb_container_content">
+                      <div>
+                        <h3>Auberge Le Panier</h3>
+                        <p>Nuit à partir de <span>23€</span></p>
+                      </div>
+                      <div>
+                        <span class="heb_star star_space_between">
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_grey.png"
+                            class="star_size"
+                            alt="Une étoile grise"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="heb_card heb_pop_card_background_color heb_pop_card_border main_border_radius"
+              >
+                <a href="#">
+                  <div>
+                    <img
+                      src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                      class="heb_img heb_pop_act_img_fit"
+                      alt="Une chambre avec un lit, un bureau, une chaise, une lampe, un téléphone, une télévision, une fenêtre et des rideaux"
+                    />
+                    <div class="heb_container_content">
+                      <div>
+                        <h3>Hôtel chez Amina</h3>
+                        <p>Nuit à partir de 96<span>€</span></p>
+                      </div>
+                      <div>
+                        <span class="heb_star star_space_between">
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <a href="#">
+              <p id="heb_show_more">Afficher plus</p>
+            </a>
+          </div>
+          <!-- Conteneur "Les plus populaires"-->
+          <div
+            id="pop_container"
+            class="heb_pop_footer_background_color main_border_radius"
+          >
+            <!-- Bloc qui contient le titre et l'icône "graph"-->
+            <div id="pop_title_graph">
+              <h2>Les plus populaires</h2>
+              <div>
+                <img
+                  src="images/icone/chart-line.png"
+                  id="graph"
+                  alt="Un graphique avec une flêche montante"
+                />
+              </div>
+            </div>
+            <!-- Conteneur pour l'affichage des images cliquables -->
+            <div id="pop_container_pop_card">
+              <!-- Bloc qui contient le bloc image et le bloc "texte et étoiles"-->
+              <div
+                class="pop_card heb_pop_card_background_color heb_pop_card_border main_border_radius pop_card_margin_bottom"
+              >
+                <!-- Bloc image -->
+                <a href="#">
+                  <div class="pop_card_img_container_content">
+                    <img
+                      src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                      class="pop_img heb_pop_act_img_fit"
+                      alt="Une chambre avec un lit, trois oreillers, un téléphone mural, deux miroirs, deux doubles lanternes murales, une double porte et un rideau"
+                    />
+                    <!-- Bloc contenant le texte et les étoiles -->
+                    <div class="pop_container_content">
+                      <div>
+                        <h3>Hôtel Le soleil du matin</h3>
+                        <p>Nuit à partir de 128<span>€</span></p>
+                      </div>
+                      <div>
+                        <span class="pop_star star_space_between">
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="pop_card heb_pop_card_background_color heb_pop_card_border main_border_radius pop_card_margin_bottom"
+              >
+                <a href="#">
+                  <div class="pop_card_img_container_content">
+                    <img
+                      src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                      class="pop_img heb_pop_act_img_fit"
+                      alt="Une chambre avec un lit, quatre oreillers, deux lampes, une mini-table, une fenêtre et une porte"
+                    />
+                    <div class="pop_container_content">
+                      <div>
+                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                        <p>Nuit à partir de 71<span>€</span></p>
+                      </div>
+                      <div>
+                        <span class="pop_star star_space_between">
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_grey.png"
+                            class="star_size"
+                            alt="Une étoile grise"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="pop_card heb_pop_card_background_color heb_pop_card_border main_border_radius"
+              >
+                <a href="#">
+                  <div class="pop_card_img_container_content">
+                    <img
+                      src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                      class="pop_img heb_pop_act_img_fit"
+                      alt="Une chambre avec un lit, deux oreillers et deux lanternes murales"
+                    />
+                    <div class="pop_container_content">
+                      <div>
+                        <h3>Hôtel Tout bleu et Blanc</h3>
+                        <p>Nuit à partir de 68<span>€</span></p>
+                      </div>
+                      <div>
+                        <span class="pop_star star_space_between">
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_blue.png"
+                            class="star_size"
+                            alt="Une étoile bleue"
+                          />
+                          <img
+                            src="images/icone/star_grey.png"
+                            class="star_size"
+                            alt="Une étoile grise"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Conteneur "Activités à Marseille"-->
+        <section id="act_container">
+          <h2 id="activites">Activités à Marseille</h2>
+          <!-- Conteneur englobant tous les conteneurs images -->
+          <div id="act_containers_img">
+            <!-- Conteneur qui affiche 1 image cliquable -->
+            <div class="act_figure act_figure_margin_right">
+              <a href="#">
+                <figure class="card_figure_1 main_border_radius act_box_shadow">
+                  <img
+                    src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                    class="act_img_border_radius heb_pop_act_img_fit"
+                    alt="Un quai, des bateaux, des immeubles et un ciel dégagé"
+                  />
+                  <figcaption>Vieux Port</figcaption>
+                </figure>
+              </a>
+            </div>
+            <!-- Conteneur qui affiche 2 images cliquables -->
+            <div class="act_figure container_2_card act_figure_margin_right">
+              <div>
+                <a href="#">
+                  <figure
+                    id="card_fort_pomegues"
+                    class="main_border_radius act_box_shadow"
+                  >
+                    <img
+                      src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                      class="act_img_border_radius heb_pop_act_img_fit"
+                      alt="Un fort sur des rochers et un ciel couvert"
+                    />
+                    <figcaption>Fort de Pomègues</figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <figure
+                    id="card_iles_frioul"
+                    class="main_border_radius act_box_shadow"
+                  >
+                    <img
+                      src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                      class="act_img_border_radius heb_pop_act_img_fit"
+                      alt="Un télescope, la mer, une île et un ciel dégagé"
+                    />
+                    <figcaption>Îles du Frioul</figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
+            <!-- Conteneur qui affiche 1 image cliquable -->
+            <div class="act_figure act_figure_margin_right">
+              <a href="#">
+                <figure class="card_figure_1 main_border_radius act_box_shadow">
+                  <img
+                    src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                    class="act_img_border_radius heb_pop_act_img_fit"
+                    alt="Des montagnes pleines de verdures, la mer, un ciel avec quelques nuages et les rayons du soleil"
+                  />
+                  <figcaption>Parc National des Calanques</figcaption>
+                </figure>
+              </a>
+            </div>
+            <!-- Conteneur qui affiche 2 images cliquables -->
+            <div class="act_figure container_2_card">
+              <div>
+                <a href="#">
+                  <figure
+                    id="card_dame_garde"
+                    class="main_border_radius act_box_shadow"
+                  >
+                    <img
+                      src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                      class="act_img_border_radius heb_pop_act_img_fit"
+                      alt="Une basilique au sommet du colline dont les alentours figurent des maisons et un ciel dégagé"
+                    />
+                    <figcaption>Notre-Dame-de-la-Garde</figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <figure
+                    id="card_longchamp"
+                    class="main_border_radius act_box_shadow"
+                  >
+                    <img
+                      src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                      class="act_img_border_radius heb_pop_act_img_fit"
+                      alt="Un palais et un ciel dégagé"
+                    />
+                    <figcaption>Parc Longchamp</figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div id="footer_propos_heb_assist_container" class="block_page">
+        <!-- Conteneur "A propos de nous" -->
+        <div
+          id="footer_propos"
+          class="footer_propos_heb_width footer_padding_top heb_pop_footer_background_color"
+        >
+          <span
+            class="footer_propos_padding_left footer_list_padding_left_resp"
+          >
+            A propos
+          </span>
+          <ul
+            class="footer_propos_padding_left footer_list_padding_left_resp footer_margin_bottom"
+          >
+            <li class="space_between_footer_links">
+              <a href="#"> Fonctionnement du site </a>
+            </li>
+            <li class="space_between_footer_links">
+              <a href="#"> Conditions générales de vente </a>
+            </li>
+            <li>
+              <a href="#"> Données et confidentialité </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Conteneur "Nos hébergements" -->
+        <div
+          id="footer_heb"
+          class="footer_propos_heb_width footer_padding_top heb_pop_footer_background_color"
+        >
+          <span class="footer_heb_padding_left footer_list_padding_left_resp">
+            Nos hébergements
+          </span>
+          <ul
+            class="footer_heb_padding_left footer_list_padding_left_resp footer_margin_bottom"
+          >
+            <li class="space_between_footer_links">
+              <a href="#"> Charte qualité </a>
+            </li>
+            <li>
+              <a href="#"> Soumettre votre hôtel </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Conteneur "Assistance" -->
+        <div
+          id="footer_assist"
+          class="footer_padding_top heb_pop_footer_background_color"
+        >
+          <span
+            class="footer_assist_padding_left footer_list_padding_left_resp"
+          >
+            Assistance
+          </span>
+          <ul
+            class="footer_assist_padding_left footer_list_padding_left_resp footer_margin_bottom"
+          >
+            <li class="space_between_footer_links">
+              <a href="#"> Centre d'aide </a>
+            </li>
+            <li>
+              <a href="#"> Nous contacter </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
